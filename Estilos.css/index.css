@@ -13,18 +13,141 @@ body{
   margin: 0%;
   padding: 0%;
 }
+.icon-cart{
+  width: 40px;
+  margin-left: 1200px;
+  height: 40px;
+  stroke: #000;
+}
+
+.icon-cart:hover{
+  cursor: pointer;
+}
+
+img{
+  max-width: 100%;
+}
+
+
+.container-icon{
+  position: relative;
+}
+
+.count-products{
+  position: absolute;
+  right: 0;
+  top: 20px;
+
+  background-color: #000;
+  color: #fff;
+  width: 25px;
+  height: 25px;
+  margin-right: 95px;
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+#contador-productos{
+  font-size: 12px;
+}
+
+.container-cart-products{
+  position: absolute;
+  top: 50px;
+  right: 0;
+
+  background-color: #fff;
+  width: 400px;
+  z-index: 1;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+  border-radius: 10px;
+  
+}
+
+.cart-product{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+
+}
+
+/* ********************************** */
+/*              FEATURES              */
+/* ********************************** */
+.container-features {
+  margin-top: -30px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 3rem;
+	padding: 3rem 0;
+}
+
+.card-feature {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1.5rem;
+
+	background-color: #fff;
+	border-radius: 1rem;
+	padding: 1.5rem 0;
+}
+
+.card-feature i {
+	font-size: 1.8rem;
+	color: var(--primary-color);
+}
+
+.feature-content {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.feature-content span {
+	font-weight: 700;
+	font-size: 0.9rem;
+	color: var(--dark-color);
+}
+
+.feature-content p {
+	color: #777;
+	font-weight: 400;
+}
 .menu2{
-  height: 100px;
-  width: 250px;
-  margin-left: 0px;
+  height: 80px;
+  width: 100px;
+  margin-left: 30px;
 }
 header{
+  margin-top: 20px;
+  margin-bottom: 30px;
   display: flex;
   align-items: center;
   align-content: stretch;
   flex-direction: row;
 }
 
+
+.login{
+  margin: 5px;
+  font-size: 25px;
+  position: absolute;
+  text-decoration: none;
+  color: #4f4eb1;
+  font-weight: bold;
+  padding: 50px;
+  align-items: center;
+  align-content: right;
+  flex-direction: row;
+}
 header nav{
   margin: 5px;
   font-size: 20px;
@@ -44,6 +167,7 @@ header nav .selected{
   color: #ff6b01;
 }
 .contenedor{
+  margin-top: 70px;
   max-width: 1300px;
   border: 7px solid rgb(247, 237, 224);
   border-radius: 15px;
@@ -56,12 +180,12 @@ header nav .selected{
 }
 .contenedor-seccion .fondo-seccion{
   position: absolute;
+  margin-left: 30px;
   top: 0;
-  left: 0;
-  background: url("../resourses/images/juguetes.webp");
+  background: url("https://www.comidaspopulares.com/index/wp-content/uploads/2024/05/comidas_populares_a_medida_01.jpg");
   background-size: cover;
-  width: 100%;
-  height: 300px;
+  width:97%;
+  height: 700px;
   border-radius: 20px;
 }
 
@@ -76,7 +200,7 @@ header nav .selected{
   margin-bottom: 30px;
 }
 .contenedor-seccion .inicio .col{
-  width: 100%;
+  width: 80%;
   align-items: center;
 }
 .contenedor-seccion .inicio .col .titulo-inicio{
@@ -102,8 +226,9 @@ header nav .selected{
   outline: none;
 }
 .contenedor-seccion .inicio .col .buscador span{
-  width: 50px;
-  height: 40px;
+  width: 70px;
+  margin-left: 100px;
+  height: 50px;
   line-height: 40px;
   cursor: pointer;
   cursor: pointer;
@@ -179,16 +304,11 @@ padding: 0 25px;
 color: #161515;
 text-align: center;
   }
-  .rojo{
-    color: #c93f3f;
-    text-align: center;
-    font-size: 12px;
-    margin-right: 10px;
-  }
+
   .container{
-   margin: 0;
+   margin-top: 0px;
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -198,8 +318,9 @@ text-align: center;
    
   }
   .container .card{
+    margin-top: -500px;
     width: 200px;
-    height: 260px;
+    height: 270px;
     overflow: hidden;
     text-align: center;
     border: 3px solid rgb(52, 54, 56);
@@ -222,7 +343,7 @@ text-align: center;
   }
    
 .container .card .product-info{
-font-size: 15px;
+font-size: 17px;
 margin-top: 0px;
 padding: 0 25px;
 color: #0a0a0a;
@@ -233,14 +354,15 @@ color: #0a0a0a;
     
   }
   .container .card .btn button{
+    margin-top: 10px;
     width: 100%;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
     padding: 5px;
-    background: rgb(28, 82, 143);
+    background: rgb(92, 87, 84);
     outline: none;
-    color:rgb(241, 248, 248);
+    color:rgb(245, 248, 248);
     cursor: pointer;
-    font-size: 12px;
+    font-size: 15px;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     border-radius: 10px;
@@ -249,7 +371,131 @@ color: #0a0a0a;
   .container .card .btn button:hover{
     transform: scale(1.1);
   }
+  .main-content {
+    background-color: var(--background-color);
+  }
   
+  /* ********************************** */
+  /*              FEATURES              */
+  /* ********************************** */
+  .container-features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    padding: 150px;
+  }
+  
+  .card-feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 1.5rem 0;
+  }
+  
+  .card-feature i {
+    font-size: 2.7rem;
+    color: var(--primary-color);
+  }
+  
+  .feature-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .feature-content span {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--dark-color);
+  }
+  
+  .feature-content p {
+    color: #777;
+    font-weight: 500;
+  }
+  
+  /* ********************************** */
+  /*             CATEGORIES             */
+  /* ********************************** */
+  
+  .top-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  margin-top: -400px;
+  }
+  
+  .container-categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+  
+  .card-category {
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    gap: 2rem;
+  }
+  
+  .category-cheff {
+    background-image: linear-gradient(#00000080, #00000080),
+      url('https://media.admagazine.com/photos/618a5d8b5175565957556047/master/w_1600%2Cc_limit/94495.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+  
+  .category-celi {
+    background-image: linear-gradient(#00000080, #00000080),
+      url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3gEf249ht5Nxm2NJkeExANGEOGemw8zAIAg&s');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .category-nona {
+    background-image: linear-gradient(#00000080, #00000080),
+      url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZfmkQDPvaXI9MemjIBrAmQHwlOQSU-Xe6wg&s');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .card-category p {
+    font-size: 2.5rem;
+    color: #fff;
+    text-transform: capitalize;
+    position: relative;
+  }
+  
+  .card-category p::after {
+    content: '';
+    width: 2.5rem;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+  
+  .card-category span {
+    font-size: 1.6rem;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .card-category span:hover {
+    color: var(--primary-color);
+  }
 .formulario{
   width: 400px;
   background: #d4e3f1;
@@ -274,7 +520,7 @@ color: #0a0a0a;
   background: #dadfe0;
   padding: 10px;
   border-radius: 4px;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   border: 1px solid #53699e;
   font-family: 'calibri';
   font-size: 18px;
@@ -288,10 +534,13 @@ color: #0a0a0a;
   line-height: 20px;
 }
 h2{
-  color: #375388;
+  color: #2a2b2e;
+  margin: 0px;
+  margin-top: 0px;
   text-align: center;
-  font-size: 25px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  padding: 0px;
+  font-family: ' 'Gill Sans MT';
 }
 .formulario a {
   color: rgb(10, 10, 10);
@@ -376,12 +625,12 @@ form{
 }
  h1{
   text-align: center;
-  color: #17191a;
+  color: #585551;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 10px;
+  margin-left: 20px;
   margin-bottom: 10px;
-  font-size: 30px;
-  text-decoration: underline;
+  font-size: 25px;
+
  } 
  .menu3{
   height: 350px;
