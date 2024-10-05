@@ -12,10 +12,12 @@
 
 <header>
     <nav id="nav">
-        <a href="../index.html" class="selected">Inicio</a>
-        <a href="./contacto.html">Contacto</a>
-        <a href="./Menu.html">Menu</a>
-      </nav>
+      <nav id="nav">
+      </a>
+      <a href="../index.html" class="selected">Inicio</a>
+      <a href="./contacto.html">Contacto</a>
+      <a href="./Menu.html">Menu</a>
+    </nav>
 </header>
    
   
@@ -23,16 +25,15 @@
     <section>
         <h1> Los más pedidos</h1>
 
-
-        Carrito = <span class="numeroCarrito"></span>
-
-
+        
+        
         <div class="container-modal">
             <div class="modal">
                 <div class="cerrar">X</div>
                 <h2 class="titulo-modal">
       
                 </h2>
+                precio <span class="precioModal"></span>
                 <img src="" alt="">
                 <label for="Cantidad">Cantidad</label>
                 <input type="number" id="Cantidad">
@@ -56,7 +57,7 @@
             </div>
             <div class="product-info">
               <h4 class="precio">
-                $6.500
+                $ <span class="precioProducto">6000</span>
               </h4>
            
              
@@ -75,7 +76,7 @@
             <div class="product-info">
 
               <h4 class="precio">
-                $8.500
+                $ <span class="precioProducto">5000</span>
               </h4>
             </div>
           </div>
@@ -92,7 +93,7 @@
             <div class="product-info">
 
               <h4 class="precio">
-                $5.000
+                $ <span class="precioProducto">5500<span>
               </h4>
            
             </div>
@@ -110,7 +111,7 @@
             <div class="product-info">
 
               <h4 class="precio">
-                $5.000
+                $ <span class="precioProducto">6800</span>
               </h4>
             </div>
           </div>
@@ -127,13 +128,22 @@
             <div class="product-info">
 
               <h4 class="precio">
-                $5.000
+                $ <span class="precioProducto">4500</span>
               </h4>
              
             </div>
           </div>
         </div>
-    </section>
-    <script src="../js/menu.js"></script>
+    </section> 
+
+    <div class="sumar">
+      <div class="centrar">
+
+        precio total = $<span class="numeroCarrito"></span>
+        <button class="finalizar">finalizar compra</button>
+      </div>
+    </div>
+
+        <script src="../js/menu.js"></script>
 </body>
 </html>
